@@ -1,4 +1,4 @@
-emp=[{'id':1, 'name': 'hari', 'age': 22, 'salary': 35000, 'place': 'tsr', 'dob': '26/11/2002', 'password': '26/11/2002'}]
+emp=[{'id':1, 'name': 'hari', 'age': 22, 'salary': 35000, 'place': 'tsr', 'dob': '2002', 'password': '2002'}]
 def add_emp():
     id=int(input('enter the id: '))
     f=0

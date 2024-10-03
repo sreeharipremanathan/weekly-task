@@ -33,8 +33,8 @@ while True:
                     print('invalid choice!!!')
         elif f==2:
             while True:
-                if user['date_of_birth']==user['password']:
-                    password=input('enter a new password')
+                if user['dob']==user['password']:
+                    password=input('enter a new password: ')
                     user['password']=password
                 else:
                     print('''
@@ -42,8 +42,21 @@ while True:
                         2.edit profile
                         3.logout
     ''')
+                    sub_ch=int(input('enter your choice: '))
+                    if sub_ch==1:
+                        view_profile(user)
+                    elif sub_ch==2:
+                        user_update(user)
+                    elif sub_ch==3:
+                        break
+                    else:
+                        print('invalid choice!!!')
         elif f==0:
             print('invalid user name or password!!!')
+    elif choice==2:
+        break
+    else:
+        print('invalid choice!!!!')
 
 
 
